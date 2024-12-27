@@ -63,7 +63,8 @@ class Users extends CI_Controller
         $this->form_validation->set_rules('level_users', 'Level Pengguna', 'required');
         $this->form_validation->set_rules('active', 'Status Aktif', 'required');
 
-        if ($this->form_validation->run() === FALSE) {
+        if ($this->form_validation->run() === FALSE) 
+        {
             $query = $this->db->get_where('users', ['id' => $id]);
             if ($query->num_rows() == 1) {
                 $data['user'] = $query->row();
@@ -77,6 +78,22 @@ class Users extends CI_Controller
             $this->load->view("users/users_edit", $data);
             $this->load->view('inc/footer');
         } else {
+
+            // $config['upload_path']      = './uploads/';
+            // $config['allowed_types']    = 'gif|jpg|png|jpeg';
+            // $config['max_size']         = '100';
+
+            // $this->load->library('upload', $config);
+
+            // $foto = null;
+
+            // if($this->upload->do_upload('foto') == false){
+            //     $this->session->set_flashdata('action_status', '<div class="alert alert-warning">'. $this->upload->display_errors() .'</div>');
+            // } else {
+            //     $data_upload = $this->upload->data();
+            //     $foto = $data_upload['file_name'];
+            // }
+
             $array_update = array(
                 'username' => $this->input->post('username'),
                 'first_name' => $this->input->post('first_name'),
@@ -87,13 +104,17 @@ class Users extends CI_Controller
                 'active' => $this->input->post('active')
             );
 
-            $this->db->where('id', $id);
-            $update_data = $this->db->update('users', $array_update);
+            // if($foto !== null){
+            //     $array_update['foto'] = $foto;
+            // }
 
-            if ($update_data == TRUE) {
-                $this->session->set_flashdata('action_status', '<div class="alert alert-success">User Berhasil diupdate</div>');
-                redirect('users');
-            }
+            // $this->db->where('id', $id);
+            // $update_data = $this->db->update('users', $array_update);
+
+            // if ($update_data == TRUE) {
+            //     $this->session->set_flashdata('action_status', '<div class="alert alert-success">User Berhasil diupdate</div>');
+            //     redirect('users');
+            // }
         }
     }
 

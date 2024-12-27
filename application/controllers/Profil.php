@@ -5,6 +5,9 @@ class Profil extends CI_Controller
 {
     public function index()
     {
+        $data = array(
+            'judul' => 'Update Profil'
+        );
         $this->load->view('inc/header');
         $this->load->view('inc/sidebar');
         $this->load->view("update_profil/profil");

@@ -12,9 +12,9 @@
                 <ul class="list-unstyled mt-3 mb-4">
                 <img src="<?php echo base_url();?>assets/img/admin.avif" class="rounded-circle" width="100px" alt="">
                     <hr>
-                    <li>Admin</li>
+                    <li><?php echo $this->ionAuth->user()->username ; ?></li>
                     <hr>
-                    <li>0897789123</li>
+                    <li><?php echo $this->ionAuth->user()->phone ; ?></li>
                 </ul>
                     <a href="<?php echo site_url();?>/profil/update_profil" class="btn btn-block btn-primary">Edit</a>
             </div>
@@ -30,17 +30,17 @@
                             <tr>
                                 <th>Nama</th>
                                 <td>:</td>
-                                <td>Admin</td>
+                                <td><?php echo $this->ionAuth->user()->first_name ;?> <?php echo $this->ionAuth->user()->last_name;?></td>
                             </tr>
                             <tr>
                             <th>Kontak</th>
                                 <td>:</td>
-                                <td>09899213</td>
+                                <td><?php echo $this->ionAuth->user()->phone;?></td>
                             </tr>
                             <tr>
                                 <th>Username</th>
                                 <td>:</td>
-                                <td>admin</td>
+                                <td><?php echo $this->ionAuth->user()->username;?></td>
                             </tr>
                     </table>
                     </div>

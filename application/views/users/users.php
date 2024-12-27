@@ -24,6 +24,7 @@
                                 <th>Nama</th>
                                 <th>Email</th>
                                 <th>Level</th>
+                                <!-- <th>foto</th> -->
                                 <th>aktif</th>
                                 <th>Aksi</th>
                             </tr>
@@ -40,6 +41,7 @@
                                     <td><?php echo $row->first_name ?> <?php echo $row->last_name ?></td>
                                     <td><?php echo $row->email ?></td>
                                     <td><?php echo $row->level_users ?></td>
+                                    <!-- <td><img style="width: 50px;" src="<?php // echo base_url(uploads/). $row->foto ?> alt=""</td> -->
                                     <td class="text-center">
                                         <?php if ($row->active == 1): ?>
                                             <button class="btn btn-success btn-sm">Aktif</button>

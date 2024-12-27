@@ -14,7 +14,7 @@
                             <!-- INPUT Text-->
                             <div class="form-group">
                                 <label for="exampleInputNama1">First Name</label>
-                                <input type="text" class="form-control" name="" id="exampleInputNama1" aria-describedby="namaHelp" autofocus required>
+                                <input type="text" class="form-control" name="first_name" id="exampleInputNama1" aria-describedby="namaHelp" autofocus required>
                             </div>
                         </div>
                       <!-- INPUT Text-->
@@ -22,7 +22,7 @@
 
                             <div class="form-group">
                                 <label for="exampleInputNama1">Last Name</label>
-                                <input type="text" class="form-control" name="" id="exampleInputNama1" aria-describedby="namaHelp">
+                                <input type="text" class="form-control" name="last_name" id="exampleInputNama1" aria-describedby="namaHelp">
                             </div>
                         </div>
                       </div>
@@ -31,14 +31,14 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="exampleInputNama1">Username</label>
-                                <input type="text" class="form-control" name="" id="exampleInputNama1" aria-describedby="namaHelp">
+                                <input type="text" class="form-control" name="username" id="exampleInputNama1" aria-describedby="namaHelp">
                             </div>
                         </div>
                         <div class="col-md-6"> 
                       <!-- INPUT Email-->
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Email address</label>
-                                <input type="email" class="form-control" name="" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                <input type="email" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp">
                             </div>
                         </div>
                     </div>
@@ -48,7 +48,7 @@
                                 <!-- INPUT Password-->    
                                 <div class="form-group">
                                 <label for="exampleInputPassword1">Password</label>
-                                <input type="password" class="form-control" name="" id="exampleInputPassword1">
+                                <input type="password" class="form-control" name="password" id="exampleInputPassword1">
                             </div>
                         </div>
 
@@ -56,7 +56,7 @@
                             <!-- INPUT Number-->
                             <div class="form-group">
                                 <label for="exampleInputNama1">Phone</label>
-                                <input type="number" class="form-control" name="" id="exampleInputNama1" aria-describedby="namaHelp">
+                                <input type="number" class="form-control" name="phone" id="exampleInputNama1" aria-describedby="namaHelp">
                             </div>
                         </div>
                     </div>
